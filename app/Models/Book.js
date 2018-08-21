@@ -4,10 +4,10 @@ const Model = use('Model')
 
 class Book extends Model {
     static get table(){
-        return 'buku'
+        return 'buku';
     }
     static get primaryKey(){
-        return 'id'
+        return 'id';
     }
 }
 

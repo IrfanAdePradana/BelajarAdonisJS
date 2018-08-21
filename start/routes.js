@@ -13,14 +13,15 @@
 |
 */
 
-const Route = use('Route')
-const Book = use('App/Models/Book')
+const Route = use('Route');
+const Book = use('App/Models/Book');
 
 
 Route.group(()=>{
-  Route.post('buku', 'BookController.store')
-  Route.get('buku', 'BookController.index')
-  Route.get('buku/:id', 'BookController.show')
-  Route.put('buku/:id', 'BookController.update')
-  Route.delete('buku/:id', 'BookController.delete')
-}).prefix('api/v1')
+  Route.post('buku', 'BookController.store');
+  Route.get('buku/buat', 'BookController.create');
+  Route.get('buku', 'BookController.index');
+  Route.get('buku/:id', 'BookController.show');
+  Route.put('buku/:id', 'BookController.update');
+  Route.delete('buku/:id', 'BookController.delete');
+}).prefix('api');
